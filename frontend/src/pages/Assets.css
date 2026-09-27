@@ -1,0 +1,104 @@
+.assets{
+    padding:5px;
+}
+
+.asset-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 576px) {
+    .asset-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
+
+.asset-header h1{
+    color:#ffffff;
+    font-size:28px;
+    margin:0;
+    text-align:left;
+}
+
+.asset-header p{
+     margin-top: 5px;
+    margin-bottom: 0;
+    color: #666;
+}
+
+ .assets .table {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-color: #343a40;
+}
+
+.assets .table th {
+    background-color: #212529;
+    color: #ffffff;
+    border-color: #343a40;
+}
+
+.assets .table td {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-color: #343a40;
+}
+
+.assets .modal-content {
+    background-color: #1e1e1e !important;
+    color: #ffffff;
+    border: 1px solid #343a40;
+}
+
+.modal-header {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-bottom: 1px solid #343a40;
+}
+
+.modal-title {
+    color: #ffffff;
+}
+
+.modal-header .btn-close {
+    filter: invert(1);
+}
+
+.modal-body{
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+.modal .modal-footer {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+    border-top: 1px solid #343a40;
+}
+.modal .form-label {
+    color: #e9ecef;
+    font-weight: 500;
+}
+.modal .form-control,
+.modal .form-select {
+    background-color: #212529;
+    color: #ffffff;
+    border: 1px solid #495057;
+}
+.modal .form-control::placeholder {
+    color: #868e96;
+}
+.modal .form-control:focus,
+.modal .form-select:focus {
+    background-color: #212529;
+    color: #ffffff;
+    border-color: #4dabf7;
+    box-shadow: 0 0 0 0.2rem rgba(77, 171, 247, 0.15);
+}
+
+.modal .form-select option {
+    background-color: #212529;
+    color: #ffffff;
+}

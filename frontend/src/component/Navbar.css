@@ -1,0 +1,36 @@
+.navbar {
+    height: 60px;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #161a1d;
+    color: white;
+    border-bottom: 1px solid #343a40;
+}
+.navbar-title {
+    font-size: 22px;
+    font-weight: 600;
+}
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-right span {
+    font-weight: 500;
+}
+
+.navbar-right button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #dc3545;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar-right button:hover {
+    background-color: #bb2d3b;
+}

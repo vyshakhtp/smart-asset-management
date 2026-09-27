@@ -1,0 +1,111 @@
+.ticket {
+    padding: 5px;
+    color: #ffffff;
+}
+
+.ticket-header {
+    margin-bottom: 25px;
+}
+
+.ticket-header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #ffffff;
+}
+
+.ticket-header p {
+    margin-top: 5px;
+    color: #adb5bd;
+}
+
+.ticket-card {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+
+    background-color: #1e1e1e;
+
+    padding: 25px;
+
+    border: 1px solid #343a40;
+    border-radius: 10px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.ticket-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 4px;
+    height: 100%;
+
+    background-color: #ff6b6b;
+}
+
+.ticket-card .form-label {
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    color: #e9ecef;
+}
+
+.ticket-card .form-control,
+.ticket-card .form-select {
+    background-color: #212529;
+    color: #ffffff;
+    border: 1px solid #495057;
+}
+
+.ticket-card .form-control::placeholder {
+    color: #868e96;
+}
+
+.ticket-card .form-control:focus,
+.ticket-card .form-select:focus {
+    background-color: #212529;
+    color: #ffffff;
+    border-color: #ff6b6b;
+    box-shadow: 0 0 0 0.2rem rgba(255, 107, 107, 0.15);
+}
+
+.ticket-card .form-select option {
+    background-color: #212529;
+    color: #ffffff;
+}
+.ticket-card .btn-primary {
+    background-color: #ff6b6b;
+    border-color: #ff6b6b;
+}
+.ticket-card .btn-primary:hover {
+    background-color: #fa5252;
+    border-color: #fa5252;
+}
+.ticket-list {
+    max-width: 1000px;
+    margin: 40px auto 0;
+}
+.ticket-list h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ffffff;
+}
+.ticket-list table {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-color: #343a40;
+}
+.ticket-list table td{
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-color: #343a40;
+}
+.ticket-list .table th{
+    background-color: #212529;
+    color: #ffffff;
+    border-color: #343a40;
+}
+
