@@ -1,11 +1,12 @@
 import os
 
-from django.contrib.auth.models import User, Group
+from django.contrib.auth import get_user_model
+from django.contrib.auth.models import Group
 from django.core.management.base import BaseCommand
 
 
 class Command(BaseCommand):
-    help = "Create the initial admin user"
+    help = "Create or update the initial admin user"
 
     def handle(self, *args, **options):
         username = os.getenv("ADMIN_USERNAME")
@@ -20,19 +21,18 @@ class Command(BaseCommand):
             )
             return
 
+        User = get_user_model()
+
         user, created = User.objects.get_or_create(
-            username=username,
-            defaults={
-                "email": email,
-                "is_staff": True,
-                "is_superuser": True,
-                "is_active": True,
-            },
+            username=username
         )
 
-        if created:
-            user.set_password(password)
-            user.save()
+        user.email = email
+        user.is_staff = True
+        user.is_superuser = True
+        user.is_active = True
+        user.set_password(password)
+        user.save()
 
         admin_group, _ = Group.objects.get_or_create(name="Admin")
         user.groups.add(admin_group)
