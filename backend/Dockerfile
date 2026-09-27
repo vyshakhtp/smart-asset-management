@@ -13,4 +13,4 @@ COPY . .
 # Expose Django’s default port
 EXPOSE 8000
 # Run the app
-CMD ["sh", "-c", "python manage.py migrate && python manage.py collectstatic --noinput && python manage.py create_initial_admin && gunicorn smartAssetAndInventoryManagementSystem.wsgi:application --bind 0.0.0.0:${PORT:-8000}"]
+CMD ["sh", "-c", "python manage.py migrate && python manage.py load_initial_data && python manage.py collectstatic --noinput && python manage.py create_initial_admin && gunicorn smartAssetAndInventoryManagementSystem.wsgi:application --bind 0.0.0.0:${PORT:-8000}"]

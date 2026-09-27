@@ -1,0 +1,422 @@
+[
+  {
+    "model": "auth.group",
+    "pk": 3,
+    "fields": {
+      "name": "Admin",
+      "permissions": [
+        25,
+        26,
+        27,
+        28,
+        33,
+        34,
+        35,
+        36,
+        29,
+        30,
+        31,
+        32,
+        37,
+        38,
+        39,
+        40
+      ]
+    }
+  },
+  {
+    "model": "auth.group",
+    "pk": 4,
+    "fields": {
+      "name": "Employee",
+      "permissions": [
+        28,
+        36,
+        32,
+        37,
+        40
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$1200000$rdORdY5JFwU3jyrZ5UCPBu$VrzB2N+NkvCatpKPsEVxOra2ZVuK62+jzkKo61A+kco=",
+      "last_login": "2026-09-20T11:29:02.510Z",
+      "is_superuser": true,
+      "username": "vyshakhtp",
+      "first_name": "",
+      "last_name": "",
+      "email": "vyshakhtp782@gmail.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2026-09-03T16:07:37Z",
+      "groups": [
+        3
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$1200000$sYghTCD9sn9Pieuv62AlrX$BIvb1v286qe7Fm0o7rzCel5EnZyba/vd8q8fEKY2gtA=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "Arjun",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-04T06:18:49Z",
+      "groups": [
+        4
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$1200000$zseHCaH9L0Hc9Pzlc1lfQF$eD/lewqZ+yfpD7xwJErIPxFZbqGbwf8SFXufnTIPBAc=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "john",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-04T10:38:27Z",
+      "groups": [
+        4
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$1200000$uuHEswPKi2ziaKmsEAfIqs$jBE92K0BGc1c3XjmA41denBu+grDMbFB8FoSR/5IeCY=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "rahul",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-04T10:39:04Z",
+      "groups": [
+        4
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$1200000$ruDvNH3sGYUE9g6ze4jBVb$q+3g+DhbIc2OiiWqA2/yKMMyWZthm4NAfjUkLr6S0FQ=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "meera",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-09-04T10:39:35Z",
+      "groups": [
+        4
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "managementapp.asset",
+    "pk": 1,
+    "fields": {
+      "name": "Dell Latitude 5420",
+      "type": "Laptop",
+      "serial_number": "DL5420-001",
+      "status": "Retired",
+      "purchase_date": "2026-01-28"
+    }
+  },
+  {
+    "model": "managementapp.asset",
+    "pk": 2,
+    "fields": {
+      "name": "HP ProDesk 400",
+      "type": "Desktop",
+      "serial_number": "HP400-001",
+      "status": "Assigned",
+      "purchase_date": "2026-01-15"
+    }
+  },
+  {
+    "model": "managementapp.asset",
+    "pk": 3,
+    "fields": {
+      "name": "Samsung 24 Inch Monitor",
+      "type": "Monitor",
+      "serial_number": "SAM24-001",
+      "status": "Available",
+      "purchase_date": "2026-02-05"
+    }
+  },
+  {
+    "model": "managementapp.asset",
+    "pk": 4,
+    "fields": {
+      "name": "Epson L3250",
+      "type": "Printer",
+      "serial_number": "EPS-L3250-001",
+      "status": "Under Repair",
+      "purchase_date": "2026-02-12"
+    }
+  },
+  {
+    "model": "managementapp.asset",
+    "pk": 5,
+    "fields": {
+      "name": "Office Chair",
+      "type": "Furniture",
+      "serial_number": "CHAIR-001",
+      "status": "Assigned",
+      "purchase_date": "2026-01-16"
+    }
+  },
+  {
+    "model": "managementapp.asset",
+    "pk": 6,
+    "fields": {
+      "name": "Lenovo ThinkPad E14",
+      "type": "Laptop",
+      "serial_number": "LEN-E14-001",
+      "status": "Available",
+      "purchase_date": "2026-03-01"
+    }
+  },
+  {
+    "model": "managementapp.asset",
+    "pk": 7,
+    "fields": {
+      "name": "Logitech Keyboard",
+      "type": "Keyboard",
+      "serial_number": "LOG-KB-001",
+      "status": "Available",
+      "purchase_date": "2026-03-05"
+    }
+  },
+  {
+    "model": "managementapp.asset",
+    "pk": 8,
+    "fields": {
+      "name": "Lenovo Ideapad",
+      "type": "Laptop",
+      "serial_number": "LEN-ID-006",
+      "status": "Under Repair",
+      "purchase_date": "2026-09-02"
+    }
+  },
+  {
+    "model": "managementapp.asset",
+    "pk": 9,
+    "fields": {
+      "name": "Lenovo Ideapad",
+      "type": "Laptop",
+      "serial_number": "LEN-ID-007",
+      "status": "Available",
+      "purchase_date": "2026-09-20"
+    }
+  },
+  {
+    "model": "managementapp.inventoryitem",
+    "pk": 1,
+    "fields": {
+      "item_type": "HDMI Cable",
+      "quantity": 25,
+      "threshold": 7
+    }
+  },
+  {
+    "model": "managementapp.inventoryitem",
+    "pk": 2,
+    "fields": {
+      "item_type": "USB Keyboard",
+      "quantity": 15,
+      "threshold": 5
+    }
+  },
+  {
+    "model": "managementapp.inventoryitem",
+    "pk": 3,
+    "fields": {
+      "item_type": "Wireless Mouse",
+      "quantity": 20,
+      "threshold": 5
+    }
+  },
+  {
+    "model": "managementapp.inventoryitem",
+    "pk": 4,
+    "fields": {
+      "item_type": "Printer Paper",
+      "quantity": 100,
+      "threshold": 20
+    }
+  },
+  {
+    "model": "managementapp.inventoryitem",
+    "pk": 5,
+    "fields": {
+      "item_type": "USB Cable",
+      "quantity": 30,
+      "threshold": 10
+    }
+  },
+  {
+    "model": "managementapp.inventoryitem",
+    "pk": 6,
+    "fields": {
+      "item_type": "Ethernet Cable",
+      "quantity": 12,
+      "threshold": 5
+    }
+  },
+  {
+    "model": "managementapp.inventoryitem",
+    "pk": 7,
+    "fields": {
+      "item_type": "Laptop Charger",
+      "quantity": 8,
+      "threshold": 3
+    }
+  },
+  {
+    "model": "managementapp.inventoryitem",
+    "pk": 8,
+    "fields": {
+      "item_type": "hello",
+      "quantity": 10,
+      "threshold": 5
+    }
+  },
+  {
+    "model": "managementapp.assignment",
+    "pk": 1,
+    "fields": {
+      "asset": 2,
+      "employee": 2,
+      "date_assigned": "2026-02-01",
+      "date_returned": null
+    }
+  },
+  {
+    "model": "managementapp.assignment",
+    "pk": 2,
+    "fields": {
+      "asset": 5,
+      "employee": 3,
+      "date_assigned": "2026-02-05",
+      "date_returned": null
+    }
+  },
+  {
+    "model": "managementapp.assignment",
+    "pk": 3,
+    "fields": {
+      "asset": 1,
+      "employee": 4,
+      "date_assigned": "2026-02-10",
+      "date_returned": null
+    }
+  },
+  {
+    "model": "managementapp.assignment",
+    "pk": 4,
+    "fields": {
+      "asset": 7,
+      "employee": 5,
+      "date_assigned": "2026-03-01",
+      "date_returned": null
+    }
+  },
+  {
+    "model": "managementapp.repairticket",
+    "pk": 1,
+    "fields": {
+      "asset": 4,
+      "issue": "Paper is not feeding properly",
+      "status": "Pending",
+      "assigned_technician": 1
+    }
+  },
+  {
+    "model": "managementapp.repairticket",
+    "pk": 2,
+    "fields": {
+      "asset": 2,
+      "issue": "System is restarting unexpectedly",
+      "status": "In Progress",
+      "assigned_technician": 1
+    }
+  },
+  {
+    "model": "managementapp.repairticket",
+    "pk": 3,
+    "fields": {
+      "asset": 6,
+      "issue": "Battery not charging",
+      "status": "Resolved",
+      "assigned_technician": 1
+    }
+  },
+  {
+    "model": "managementapp.repairticket",
+    "pk": 5,
+    "fields": {
+      "asset": 3,
+      "issue": "black lines on the screen",
+      "status": "In Progress",
+      "assigned_technician": null
+    }
+  },
+  {
+    "model": "managementapp.chat",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "prompt": "What is Django?",
+      "response": "Django is a free and open-source web framework written in Python. It is a high-level framework that enables rapid development of secure, maintainable, and scalable websites. Django is often referred to as a \"batteries included\" framework because it provides a lot of functionality out of the box, such as:\n\n1. A modular design that allows you to easily add or remove components as needed.\n2. A built-in ORM (Object-Relational Mapping) system that abstracts the underlying database, making it easy to work with different databases.\n3. A template engine that allows you to separate presentation logic from application logic.\n4. Support for internationalization and localization (i18n and L10n).\n5. Support for testing and debugging.\n6. A built-in administration interface that allows you to manage models, views, and other data.\n7. Support for caching, session management, and other common web development tasks.\n\nDjango is designed to make it easy to build robust, secure, and maintainable websites quickly. It provides a lot of built-in functionality, making it a good choice for building complex web applications. However, it is also flexible and can be used to build simple web applications as well.\n\nSome of the key features of Django include:\n\n* **Modular design**: Django is designed to be modular, allowing you to easily add or remove components as needed.\n* **ORM system**: Django's ORM system abstracts the underlying database, making it easy to work with different databases.\n* **Template engine**: Django's template engine allows you to separate presentation logic from application logic.\n* **Auto-discovery**: Django's auto-discovery feature allows you to automatically discover and configure models, views, and other components.\n* **Built-in administration interface**: Django provides a built-in administration interface that allows you to manage models, views, and other data.\n* **Support for testing and debugging**: Django provides built-in support for testing and debugging, making it easy to write and run tests for your application.\n\nOverall, Django is a powerful and flexible web framework that is well-suited for building complex web applications.",
+      "created_at": "2026-09-24T15:45:28.942Z"
+    }
+  },
+  {
+    "model": "managementapp.chat",
+    "pk": 2,
+    "fields": {
+      "user": 1,
+      "prompt": "explain react in 2 sentence",
+      "response": "React is a JavaScript library for building user interfaces, used for creating reusable UI components and managing state changes in a declarative way, making it easier to reason about and maintain complex user interfaces. React allows developers to declaratively describe what they want to see in their UI, and it will efficiently update and render the UI when the underlying data changes.",
+      "created_at": "2026-09-24T16:27:37.928Z"
+    }
+  },
+  {
+    "model": "managementapp.chat",
+    "pk": 3,
+    "fields": {
+      "user": 1,
+      "prompt": "tell me about python full stack in shorter words\n",
+      "response": "Python Full Stack refers to the ability to handle all layers of web development using the Python programming language. Here's a breakdown:\n\n**Front-end:** HTML, CSS, JavaScript, and frameworks like React or Angular for creating user interfaces.\n\n**Back-end:** Python is used to create the server-side logic, API connectivity, and database interactions. Frameworks like Django, Flask, or Pyramid help with this.\n\n**Database:** Python can interact with various databases like MySQL, PostgreSQL, MongoDB, or SQLite to store and retrieve data.\n\n**Full Stack:** With Python, you can handle all these layers, from front-end to back-end, and even database interactions, making it a versatile and powerful language for web development.",
+      "created_at": "2026-09-24T17:01:43.612Z"
+    }
+  }
+]
